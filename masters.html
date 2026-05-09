@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+<title>Masters</title>
+<link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+
+<div class='sidebar'>
+<h2>🏥 Inventory</h2>
+<a href='dashboard.html'>📊 Dashboard</a>
+<a href='masters.html'>📦 Masters</a>
+</div>
+
+<div class='content'>
+
+<div class='page-header'>
+<h1>Item Master</h1>
+<p>Add approved inventory items</p>
+</div>
+
+<div class='form-box'>
+<div class='form-grid'>
+<input id='itemName' placeholder='Item Name'>
+<input id='itemUnit' placeholder='Unit'>
+</div>
+
+<button class='primary-btn' onclick='saveItem()' style='margin-top:20px;'>Save Item</button>
+</div>
+
+<div class='table-container'>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Unit</th>
+<th>Stock</th>
+</tr>
+</thead>
+<tbody id='itemTable'></tbody>
+</table>
+</div>
+
+</div>
+
+<script src='js/api.js'></script>
+<script src='js/masters.js'></script>
+
+</body>
+</html>

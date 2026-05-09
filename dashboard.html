@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+<title>Dashboard</title>
+<link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+
+<div class='sidebar'>
+<h2>🏥 Inventory</h2>
+
+<a href='dashboard.html'>📊 Dashboard</a>
+<a href='masters.html'>📦 Masters</a>
+<a href='enter-items.html'>🧾 Enter Items</a>
+<a href='issue-items.html'>🏬 Issue Items</a>
+
+<button onclick='selectStore(1)'>🏪 Main Store</button>
+<button onclick='selectStore(2)'>🚑 Emergency Store</button>
+
+<button class='logout-btn' onclick='logout()'>🚪 Logout</button>
+</div>
+
+<div class='content'>
+
+<div class='page-header'>
+<h1>Dashboard</h1>
+<p>Live inventory overview</p>
+</div>
+
+<div class='table-container'>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Unit</th>
+<th>Current Stock</th>
+</tr>
+</thead>
+<tbody id='dashboardInventory'></tbody>
+</table>
+</div>
+
+</div>
+
+<script src='js/api.js'></script>
+<script src='js/store.js'></script>
+<script src='js/auth.js'></script>
+<script src='js/dashboard.js'></script>
+
+</body>
+</html>

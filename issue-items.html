@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+<title>Issues</title>
+<link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+
+<div class='sidebar'>
+<h2>🏥 Inventory</h2>
+<a href='dashboard.html'>📊 Dashboard</a>
+</div>
+
+<div class='content'>
+
+<div class='page-header'>
+<h1>Issue Items</h1>
+<p>Issue stock to departments</p>
+</div>
+
+<div class='form-box'>
+<input id='department' placeholder='Department'>
+<button class='primary-btn' onclick='addIssueRow()' style='margin-top:20px;'>+ Add Row</button>
+</div>
+
+<div class='table-container'>
+<table id='issueTable'>
+<thead>
+<tr>
+<th>Item</th>
+<th>Qty</th>
+<th>Remove</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+
+<button class='primary-btn' onclick='saveIssue()' style='margin-top:20px;'>Save Issue</button>
+
+</div>
+
+<script src='js/api.js'></script>
+<script src='js/issue.js'></script>
+
+</body>
+</html>
